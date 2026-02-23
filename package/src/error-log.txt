@@ -1,0 +1,10 @@
+2026-02-23 11:36:16 - ERROR: Could not retrieve item information for item ID: FAIL_DB
+se.kth.iv1350.controller.OperationFailedException: Could not retrieve item information for item ID: FAIL_DB
+	at se.kth.iv1350.controller.Controller.enterItem(Controller.java:76)
+	at se.kth.iv1350.view.View.startSale(View.java:68)
+	at se.kth.iv1350.main.main(main.java:33)
+Caused by: se.kth.iv1350.integration.DatabaseFailureException: Could not connect to the inventory database.
+	at se.kth.iv1350.integration.InventorySystem.retrieveItemInfo(InventorySystem.java:42)
+	at se.kth.iv1350.controller.Controller.enterItem(Controller.java:71)
+	... 2 more
+
